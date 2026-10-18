@@ -26,25 +26,25 @@
   "items": [
     {
       "id": "port-custom-1",
-      "title": "Eksplanasi Visual & Data — Custom Gaya Vox / Jurnalistik",
+      "title": "Investigasi Karhutla & Isu Lingkungan — Vox Explainer",
       "category": "custom",
       "categoryLabel": "Custom Style",
       "duration": "03:45",
       "aspectRatio": "16:9",
-      "youtubeId": "dQw4w9WgXcQ",
+      "youtubeId": "fxy6dZE0rm4",
       "stats": "Animasi Peta + Highlight Artikel + Parallax 2.5D",
       "description": "Pengemasan topik mendalam menjadi sajian visual yang jernih dan memikat menggunakan animasi infografis serta tata suara berkelas."
     },
     {
       "id": "port-ai-1",
-      "title": "3D Arsitektur Sinematik — Visualisasi Ruang & Bangunan",
+      "title": "Modern Architecture Cinematic Tour — 3D Arsitektur Sinematik",
       "category": "ai-motion",
-      "categoryLabel": "3D Arsitektur Sinematik",
+      "categoryLabel": "3D Arsitektur",
       "duration": "01:30",
       "aspectRatio": "16:9",
-      "youtubeId": "dQw4w9WgXcQ",
-      "stats": "Photorealistic Render + Cinematic Camera + Lighting Detail",
-      "description": "Visualisasi ruang, bangunan, dan interior fotorealistik dengan pergerakan kamera sinematik, pencahayaan dramatis, serta detail arsitektur berkelas."
+      "youtubeId": "h-SZexXNI7g",
+      "stats": "Photorealistic Tour + Cinematic Lighting + Spatial Design",
+      "description": "Visualisasi ruang, bangunan, dan interior fotorealistik bergaya sinematik modern."
     },
     {
       "id": "port-motion-1",
@@ -70,14 +70,14 @@
     },
     {
       "id": "port-creator-1",
-      "title": "Edukasi & Storytelling Kreatif dengan Full Animasi 2D",
+      "title": "Gurkha: Tentara Legendaris — Edukasi & Storytelling Full 2D",
       "category": "editing",
       "categoryLabel": "Full Animasi 2D",
       "duration": "02:10",
       "aspectRatio": "16:9",
-      "youtubeId": "dQw4w9WgXcQ",
-      "stats": "Full 2D Animation + Premium AI VO + Dynamic Storytelling",
-      "description": "Penyajian konten edukasi dan cerita kreatif yang hidup menggunakan full animasi 2D ekspresif, narasi suara jernih, dan ilustrasi memikat."
+      "youtubeId": "7ItaTB-jV_g",
+      "stats": "Full 2D Character Animation + Storytelling + Dynamic Pacing",
+      "description": "Video edukasi dan penceritaan sejarah yang dikemas hidup dengan teknik visual dan narasi mendalam."
     },
     {
       "id": "port-custom-2",

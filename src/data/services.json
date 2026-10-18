@@ -84,19 +84,19 @@
     {
       "id": "content-creator",
       "category": "editing",
-      "categoryLabel": "Full Animasi 2D",
-      "name": "Edukasi & Storytelling Kreatif dengan Full Animasi 2D",
+      "categoryLabel": "Full Content Creation",
+      "name": "Paket Content Creator",
       "badge": "Best Value",
       "price": 75000,
       "unit": "Menit",
       "minOrder": 1,
-      "shortDesc": "Konten edukasi dan storytelling kreatif yang hidup menggunakan full animasi 2D, lengkap dengan Voice Over dan subtitle dinamis.",
+      "shortDesc": "Solusi terima beres lengkap dengan Voice Over, subtitle dinamis, dan stock footage.",
       "features": [
-        "Visualisasi Full Animasi 2D yang ekspresif & memikat",
         "Termasuk Voice Over (Premium AI Natural Voice)",
         "Dynamic Subtitle penuh sepanjang video",
+        "Kurasi Stock Footage / B-Roll berkualitas tinggi",
         "Sound Effect (SFX) & Background Music yang hidup",
-        "Cocok untuk konten edukasi, storytelling kreatif, & faceless channel"
+        "Cocok untuk konten edukasi, storytelling, & faceless channel"
       ],
       "limitations": "Naskah/script disediakan klien (atau tambah opsi penulisan naskah di kalkulator)."
     },
@@ -104,7 +104,7 @@
       "id": "visual-pro-ai-motion",
       "category": "ai-motion",
       "categoryLabel": "3D Arsitektur & Motion",
-      "name": "3D Arsitektur Sinematik",
+      "name": "Paket 3D Arsitektur Sinematik",
       "badge": "Visual Modern",
       "price": 125000,
       "unit": "Menit",
@@ -122,21 +122,21 @@
     {
       "id": "custom-style",
       "category": "custom",
-      "categoryLabel": "Custom Reference Style",
-      "name": "Paket Custom — Sesuai Gaya Anda",
+      "categoryLabel": "Full Animasi 2D",
+      "name": "Paket Edukasi & Storytelling Full Animasi 2D",
       "badge": "Fleksibel & Eksklusif",
       "price": 175000,
       "unit": "Menit",
       "minOrder": 1,
-      "shortDesc": "Bebas tentukan gaya editing impian Anda! Cukup kirimkan link video referensi (Vox, Jurnalistik, Storytelling, atau gaya unik lainnya).",
+      "shortDesc": "Konten edukasi dan storytelling kreatif yang hidup menggunakan full animasi 2D, atau adaptasi gaya referensi channel impian Anda.",
       "features": [
-        "Adaptasi gaya visual dari channel/video referensi pilihan Anda",
-        "Kombinasi bebas: Motion Graphic, 3D AI Visual, Peta/Data, atau Parallax",
-        "Termasuk Voice Over Natural & tipografi mengikuti referensi",
+        "Visualisasi Full Animasi 2D ekspresif & adaptasi gaya referensi",
+        "Kombinasi bebas: Karakter 2D, Motion Graphic, Peta/Data, atau Parallax",
+        "Termasuk Voice Over Natural & tipografi mengikuti konsep cerita",
         "Pacing, transisi, & color grading disesuaikan dengan karakter brand",
         "Sound design berlapis (SFX, ambience, & scoring)"
       ],
-      "limitations": "Wajib menyertakan minimal 1 link video referensi gaya yang diinginkan saat memesan."
+      "limitations": "Wajib menyertakan konsep cerita atau minimal 1 link video referensi gaya saat memesan."
     }
   ],
   "addons": [
