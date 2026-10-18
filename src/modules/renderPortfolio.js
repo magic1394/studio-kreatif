@@ -29,12 +29,7 @@ export function renderPortfolio(portfolioData) {
               <span class="tag-pill">${item.categoryLabel}</span>
               <span class="tag-pill">${item.aspectRatio} • ${item.duration}</span>
             </div>
-            <img 
-              src="https://img.youtube.com/vi/${item.youtubeId}/hqdefault.jpg" 
-              alt="${item.title}" 
-              class="portfolio-img" 
-              loading="lazy" 
-            />
+            ${item.youtubeId ? `<img src="https://img.youtube.com/vi/${item.youtubeId}/hqdefault.jpg" alt="${item.title}" class="portfolio-img" loading="lazy" />` : ''}
             <div class="play-trigger" title="Putar Preview Video">▶</div>
           </div>
           <div class="portfolio-body">
@@ -73,7 +68,9 @@ export function renderPortfolio(portfolioData) {
       thumb.addEventListener('click', () => {
         const ytId = thumb.getAttribute('data-yt');
         const title = thumb.getAttribute('data-title');
-        openVideoModal(ytId, title);
+        if (ytId && ytId.trim() !== '') {
+          openVideoModal(ytId, title);
+        }
       });
     });
   }
