@@ -308,6 +308,20 @@
   overflow: hidden;
 }
 
+.portfolio-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-fast);
+  z-index: 1;
+}
+
+.portfolio-thumb:hover .portfolio-img {
+  transform: scale(1.05);
+}
+
 .portfolio-thumb .play-trigger {
   width: 60px;
   height: 60px;

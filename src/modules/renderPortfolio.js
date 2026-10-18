@@ -29,6 +29,12 @@ export function renderPortfolio(portfolioData) {
               <span class="tag-pill">${item.categoryLabel}</span>
               <span class="tag-pill">${item.aspectRatio} • ${item.duration}</span>
             </div>
+            <img 
+              src="https://img.youtube.com/vi/${item.youtubeId}/hqdefault.jpg" 
+              alt="${item.title}" 
+              class="portfolio-img" 
+              loading="lazy" 
+            />
             <div class="play-trigger" title="Putar Preview Video">▶</div>
           </div>
           <div class="portfolio-body">
