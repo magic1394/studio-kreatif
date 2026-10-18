@@ -1,0 +1,162 @@
+{
+  "sectionTitle": "Pilihan Paket Jelas, Transparan & Bersahabat",
+  "sectionSubtitle": "Pilih layanan yang paling pas dengan target konten Anda. Seluruh harga per menit dihitung dari durasi video hasil akhir (output).",
+  "categories": [
+    {
+      "id": "all",
+      "label": "Semua Layanan"
+    },
+    {
+      "id": "clipper",
+      "label": "Short-Form Clipper"
+    },
+    {
+      "id": "editing",
+      "label": "Video Editing & Creator"
+    },
+    {
+      "id": "ai-motion",
+      "label": "Motion & 3D AI Visual"
+    },
+    {
+      "id": "custom",
+      "label": "Custom Sesuai Gaya"
+    }
+  ],
+  "packages": [
+    {
+      "id": "clipper-basic",
+      "category": "clipper",
+      "categoryLabel": "Short-Form 9:16",
+      "name": "Paket Clipper Basic",
+      "badge": "Hemat & Cepat",
+      "price": 25000,
+      "unit": "6 Klip",
+      "minOrder": 1,
+      "shortDesc": "Potong cepat video podcast/stream panjang menjadi 6 klip vertikal siap upload.",
+      "features": [
+        "Output 6 klip vertikal (9:16) @ maks. 60 detik",
+        "Klien menyediakan daftar timestamp (menit potong)",
+        "Auto-Subtitle rapi & sinkron dengan suara",
+        "Reframing wajah pembicara (1–2 orang)",
+        "Format MP4 Full HD 1080p siap upload"
+      ],
+      "limitations": "Wajib menyertakan timestamp dari video maks. 60 menit."
+    },
+    {
+      "id": "clipper-plus",
+      "category": "clipper",
+      "categoryLabel": "Short-Form 9:16",
+      "name": "Paket Clipper Plus (Hook Finder)",
+      "badge": "Populer untuk Podcaster",
+      "price": 50000,
+      "unit": "6 Klip",
+      "minOrder": 1,
+      "shortDesc": "Terima beres! Kami yang menonton dan memilihkan 6 momen paling berpotensi FYP.",
+      "features": [
+        "Tim kami yang mencari 6 momen terbaik (FYP Hook)",
+        "Dynamic Subtitle berwarna + koreksi salah ketik (typo)",
+        "Headline / Judul statis pemancing klik di atas layar",
+        "Efek zoom in/out halus & sound effect transisi",
+        "Format MP4 Full HD 1080p siap TikTok/Reels/Shorts"
+      ],
+      "limitations": "Dari 1 sumber video panjang durasi maksimal 60 menit."
+    },
+    {
+      "id": "basic-edit",
+      "category": "editing",
+      "categoryLabel": "Basic Video Editing",
+      "name": "Paket Basic Cut",
+      "badge": null,
+      "price": 35000,
+      "unit": "Menit",
+      "minOrder": 1,
+      "shortDesc": "Editing bersih, cerah, dan rapi untuk vlog, talking head, podcast, atau dokumentasi.",
+      "features": [
+        "Cut-to-cut rapi (buang jeda/bagian salah bicara)",
+        "Color correction cerah & pencahayaan seimbang",
+        "Audio syncing & pembersihan noise dasar",
+        "Penambahan Background Music (BGM) bebas copyright",
+        "Transisi bersih & lower-third nama pembicara"
+      ],
+      "limitations": "Tanpa subtitle penuh dan tanpa Voice Over. Bahan mentah maks. 15 menit untuk 1 menit hasil."
+    },
+    {
+      "id": "content-creator",
+      "category": "editing",
+      "categoryLabel": "Full Content Creation",
+      "name": "Paket Content Creator",
+      "badge": "Best Value",
+      "price": 75000,
+      "unit": "Menit",
+      "minOrder": 1,
+      "shortDesc": "Solusi terima beres lengkap dengan Voice Over, subtitle dinamis, dan stock footage.",
+      "features": [
+        "Termasuk Voice Over (Premium AI Natural Voice)",
+        "Dynamic Subtitle penuh sepanjang video",
+        "Kurasi Stock Footage / B-Roll berkualitas tinggi",
+        "Sound Effect (SFX) & Background Music yang hidup",
+        "Cocok untuk konten edukasi, storytelling, & faceless channel"
+      ],
+      "limitations": "Naskah/script disediakan klien (atau tambah opsi penulisan naskah di kalkulator)."
+    },
+    {
+      "id": "visual-pro-ai-motion",
+      "category": "ai-motion",
+      "categoryLabel": "Motion & 3D AI",
+      "name": "Paket Visual Pro — 3D AI / Motion Graphic",
+      "badge": "Visual Modern",
+      "price": 125000,
+      "unit": "Menit",
+      "minOrder": 1,
+      "shortDesc": "Visualisasi imajinatif menggunakan 3D AI Generation atau 2D Motion Graphic custom.",
+      "features": [
+        "Pilihan mode: Full 3D AI Visualisasi atau 2D Motion Graphic",
+        "Konsistensi gaya visual & warna yang memikat mata",
+        "Animasi teks, ikon, & transisi kamera halus",
+        "Termasuk Voice Over AI Natural & Subtitle",
+        "Sound design imersif yang menyatu dengan gerakan visual"
+      ],
+      "limitations": "Maksimal 2x revisi prompt/visual per scene untuk menjaga efisiensi kredit AI."
+    },
+    {
+      "id": "custom-style",
+      "category": "custom",
+      "categoryLabel": "Custom Reference Style",
+      "name": "Paket Custom — Sesuai Gaya Anda",
+      "badge": "Fleksibel & Eksklusif",
+      "price": 175000,
+      "unit": "Menit",
+      "minOrder": 1,
+      "shortDesc": "Bebas tentukan gaya editing impian Anda! Cukup kirimkan link video referensi (Vox, Jurnalistik, Storytelling, atau gaya unik lainnya).",
+      "features": [
+        "Adaptasi gaya visual dari channel/video referensi pilihan Anda",
+        "Kombinasi bebas: Motion Graphic, 3D AI Visual, Peta/Data, atau Parallax",
+        "Termasuk Voice Over Natural & tipografi mengikuti referensi",
+        "Pacing, transisi, & color grading disesuaikan dengan karakter brand",
+        "Sound design berlapis (SFX, ambience, & scoring)"
+      ],
+      "limitations": "Wajib menyertakan minimal 1 link video referensi gaya yang diinginkan saat memesan."
+    }
+  ],
+  "addons": [
+    {
+      "id": "addon-script",
+      "name": "Penulisan Naskah / Riset Script",
+      "price": 35000,
+      "desc": "Kami buatkan naskah siap baca lengkap dengan arahan visual per menit"
+    },
+    {
+      "id": "addon-express",
+      "name": "Jalur Prioritas (Express 24 Jam)",
+      "price": 50000,
+      "desc": "Pengerjaan diprioritaskan selesai dalam 24 jam sejak bahan diterima"
+    },
+    {
+      "id": "addon-thumbnail",
+      "name": "Desain Custom Thumbnail YouTube/Cover",
+      "price": 25000,
+      "desc": "Thumbnail cerah high-CTR resolusi tinggi siap pasang"
+    }
+  ]
+}

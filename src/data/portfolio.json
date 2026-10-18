@@ -1,0 +1,94 @@
+{
+  "sectionTitle": "Galeri Referensi & Gaya Visual",
+  "sectionSubtitle": "Klik kategori di bawah untuk melihat berbagai pendekatan visual yang siap kami wujudkan untuk meningkatkan daya tarik konten Anda.",
+  "categories": [
+    {
+      "id": "all",
+      "label": "Semua Karya"
+    },
+    {
+      "id": "clipper",
+      "label": "Clipper 9:16"
+    },
+    {
+      "id": "editing",
+      "label": "Content Creator"
+    },
+    {
+      "id": "ai-motion",
+      "label": "3D AI & Motion"
+    },
+    {
+      "id": "custom",
+      "label": "Custom Style"
+    }
+  ],
+  "items": [
+    {
+      "id": "port-custom-1",
+      "title": "Eksplanasi Visual & Data — Custom Gaya Vox / Jurnalistik",
+      "category": "custom",
+      "categoryLabel": "Custom Style",
+      "duration": "03:45",
+      "aspectRatio": "16:9",
+      "youtubeId": "dQw4w9WgXcQ",
+      "stats": "Animasi Peta + Highlight Artikel + Parallax 2.5D",
+      "description": "Pengemasan topik mendalam menjadi sajian visual yang jernih dan memikat menggunakan animasi infografis serta tata suara berkelas."
+    },
+    {
+      "id": "port-ai-1",
+      "title": "Dunia Imajinasi & Cerita Visual — 3D AI Animation",
+      "category": "ai-motion",
+      "categoryLabel": "3D AI Visual",
+      "duration": "01:30",
+      "aspectRatio": "16:9",
+      "youtubeId": "dQw4w9WgXcQ",
+      "stats": "Consistent AI Character + Dynamic Camera + Vivid Color",
+      "description": "Rangkaian adegan 3D AI penuh warna dan ekspresif dengan karakter konsisten, dipadukan narasi VO dan musik yang menggugah."
+    },
+    {
+      "id": "port-motion-1",
+      "title": "2D Motion Graphic — Presentasi Produk & Edukasi Brand",
+      "category": "ai-motion",
+      "categoryLabel": "Motion Graphic",
+      "duration": "01:15",
+      "aspectRatio": "16:9",
+      "youtubeId": "dQw4w9WgXcQ",
+      "stats": "Smooth Keyframe + Custom Illustration + Kinetic Text",
+      "description": "Animasi 2D yang segar, bersih, dan penuh energi positif untuk menjelaskan layanan atau mengedukasi audiens."
+    },
+    {
+      "id": "port-clipper-1",
+      "title": "Klip Podcast Inspiratif — Hook Kuat & Dynamic Subtitle",
+      "category": "clipper",
+      "categoryLabel": "Clipper 9:16",
+      "duration": "00:52",
+      "aspectRatio": "9:16",
+      "youtubeId": "dQw4w9WgXcQ",
+      "stats": "6 Klip Vertikal + Auto-Caption + Headline Menarik",
+      "description": "Mengubah obrolan panjang menjadi klip vertikal 9:16 yang padat, seru, dan nyaman ditonton di layar HP."
+    },
+    {
+      "id": "port-creator-1",
+      "title": "Edukasi & Storytelling Kreatif — Content Creator",
+      "category": "editing",
+      "categoryLabel": "Content Creator",
+      "duration": "02:10",
+      "aspectRatio": "16:9",
+      "youtubeId": "dQw4w9WgXcQ",
+      "stats": "Premium AI VO + B-Roll Rapat + Dynamic Subtitle",
+      "description": "Gaya editing dinamis dengan pemilihan stock footage yang pas, narasi suara jernih, dan teks interaktif."
+    },
+    {
+      "id": "port-custom-2",
+      "title": "Adaptasi Gaya Channel Favorit Anda — Full Custom",
+      "category": "custom",
+      "categoryLabel": "Custom Style",
+      "duration": "04:20",
+      "aspectRatio": "16:9",
+      "youtubeId": "dQw4w9WgXcQ",
+      "stats": "Sesuai Link Referensi + Custom Pacing + Sound Design",
+      "description": "Punya referensi gaya editing dari kreator luar atau dalam negeri? Kirimkan link-nya, kami sesuaikan untuk identitas konten Anda."
+    }
+  ]
+}

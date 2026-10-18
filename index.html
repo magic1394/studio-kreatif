@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio Kreatif — Jasa Video Editing, 3D AI Visual, Motion Graphic & Custom Style</title>
+    <meta
+      name="description"
+      content="Layanan profesional pembuatan video Short-Form Clipper, Content Creator, Motion Graphic, 3D AI Visualisasi, hingga Custom Style sesuai referensi Anda."
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container navbar-inner">
+        <a href="#" class="brand-logo" id="nav-brand">StudioKreatif<span class="accent">.biz.id</span></a>
+        <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Buka Menu">☰ Menu</button>
+        <nav class="nav-links" id="nav-links">
+          <a href="#pricing">Katalog & Harga</a>
+          <a href="#portfolio">Portofolio Visual</a>
+          <a href="#calculator">Kalkulator WA</a>
+          <a href="#workflow">Alur & Ketentuan</a>
+          <a href="#" id="nav-wa-btn" target="_blank" rel="noopener" class="btn btn-wa" style="padding:0.55rem 1.15rem;font-size:0.88rem;">
+            Chat WhatsApp
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section" id="hero-root"></section>
+      <section id="pricing"><div id="pricing-root"></div></section>
+      <section id="portfolio"><div id="portfolio-root"></div></section>
+      <section id="calculator"><div id="calculator-root"></div></section>
+      <section id="workflow"><div id="workflow-root"></div></section>
+    </main>
+
+    <footer class="site-footer" id="footer-root"></footer>
+
+    <div class="video-modal" id="video-modal" role="dialog" aria-modal="true">
+      <div class="video-modal-content">
+        <div class="video-modal-header">
+          <strong id="modal-video-title">Preview Portofolio</strong>
+          <button id="close-video-modal" class="btn btn-outline" style="padding:0.35rem 0.85rem;">✕ Tutup</button>
+        </div>
+        <div class="video-frame-container" id="modal-video-frame"></div>
+      </div>
+    </div>
+
+    <a href="#" id="floating-wa-btn" target="_blank" rel="noopener" class="floating-wa">
+      <span>💬 Konsultasi Cepat WA</span>
+    </a>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

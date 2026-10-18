@@ -1,0 +1,15 @@
+{
+  "name": "studiokreatif-vite",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "description": "Website Resmi Studio Kreatif — Jasa Video Editing, Clipper, Motion Graphic, 3D AI Visual & Custom Style (Bright Positive Edition)",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}

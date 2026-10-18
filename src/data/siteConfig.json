@@ -1,0 +1,49 @@
+{
+  "brandName": "StudioKreatif",
+  "brandAccent": ".biz.id",
+  "domain": "studiokreatif.biz.id",
+  "whatsappNumber": "62895366385484",
+  "whatsappGreeting": "Halo Studio Kreatif! Saya tertarik berkonsultasi mengenai jasa pembuatan/editing video.",
+  "email": "halo@studiokreatif.biz.id",
+  "location": "Indonesia — Partner Produksi Konten Kreatif & AI Visual (Remote)",
+  "hero": {
+    "badge": "✨ PARTNER KREATIF VIDEO & AI VISUAL ANDA",
+    "title": "Wujudkan Ide Konten Anda Menjadi",
+    "titleHighlight": "Video Menarik & Siap Viral",
+    "subtitle": "Mulai dari potongan klip podcast harian, konten edukasi penuh cerita, animasi Motion Graphic, 3D AI Visualisasi, hingga gaya editing Custom sesuai channel impian Anda.",
+    "primaryCta": "Hitung Estimasi & Order via WA",
+    "secondaryCta": "Eksplorasi Paket Layanan"
+  },
+  "stats": [
+    {
+      "value": "6 Paket",
+      "label": "Pilihan Fleksibel Sesuai Kebutuhan"
+    },
+    {
+      "value": "9:16 & 16:9",
+      "label": "Siap TikTok, Reels, Shorts & YouTube"
+    },
+    {
+      "value": "2x Revisi",
+      "label": "Jaminan Kepuasan Hasil Akhir"
+    },
+    {
+      "value": "Rp25rb",
+      "label": "Mulai dari (Paket 6 Klip)"
+    }
+  ],
+  "socials": [
+    {
+      "platform": "Instagram",
+      "url": "https://instagram.com/"
+    },
+    {
+      "platform": "TikTok",
+      "url": "https://tiktok.com/"
+    },
+    {
+      "platform": "YouTube",
+      "url": "https://youtube.com/"
+    }
+  ]
+}
