@@ -84,40 +84,40 @@
     {
       "id": "content-creator",
       "category": "editing",
-      "categoryLabel": "Full Content Creation",
-      "name": "Paket Content Creator",
+      "categoryLabel": "Full Animasi 2D",
+      "name": "Edukasi & Storytelling Kreatif dengan Full Animasi 2D",
       "badge": "Best Value",
       "price": 75000,
       "unit": "Menit",
       "minOrder": 1,
-      "shortDesc": "Solusi terima beres lengkap dengan Voice Over, subtitle dinamis, dan stock footage.",
+      "shortDesc": "Konten edukasi dan storytelling kreatif yang hidup menggunakan full animasi 2D, lengkap dengan Voice Over dan subtitle dinamis.",
       "features": [
+        "Visualisasi Full Animasi 2D yang ekspresif & memikat",
         "Termasuk Voice Over (Premium AI Natural Voice)",
         "Dynamic Subtitle penuh sepanjang video",
-        "Kurasi Stock Footage / B-Roll berkualitas tinggi",
         "Sound Effect (SFX) & Background Music yang hidup",
-        "Cocok untuk konten edukasi, storytelling, & faceless channel"
+        "Cocok untuk konten edukasi, storytelling kreatif, & faceless channel"
       ],
       "limitations": "Naskah/script disediakan klien (atau tambah opsi penulisan naskah di kalkulator)."
     },
     {
       "id": "visual-pro-ai-motion",
       "category": "ai-motion",
-      "categoryLabel": "Motion & 3D AI",
-      "name": "Paket Visual Pro — 3D AI / Motion Graphic",
+      "categoryLabel": "3D Arsitektur & Motion",
+      "name": "3D Arsitektur Sinematik",
       "badge": "Visual Modern",
       "price": 125000,
       "unit": "Menit",
       "minOrder": 1,
-      "shortDesc": "Visualisasi imajinatif menggunakan 3D AI Generation atau 2D Motion Graphic custom.",
+      "shortDesc": "Fokus visualisasi ruang, bangunan, dan interior fotorealistik dengan pergerakan kamera sinematik yang memukau.",
       "features": [
-        "Pilihan mode: Full 3D AI Visualisasi atau 2D Motion Graphic",
-        "Konsistensi gaya visual & warna yang memikat mata",
-        "Animasi teks, ikon, & transisi kamera halus",
+        "Visualisasi 3D ruang, eksterior bangunan, & interior fotorealistik",
+        "Pergerakan kamera sinematik & pencahayaan (lighting) dramatis",
+        "Animasi teks, informasi dimensi/fitur ruang, & transisi halus",
         "Termasuk Voice Over AI Natural & Subtitle",
-        "Sound design imersif yang menyatu dengan gerakan visual"
+        "Sound design imersif & elegan yang menyatu dengan suasana ruang"
       ],
-      "limitations": "Maksimal 2x revisi prompt/visual per scene untuk menjaga efisiensi kredit AI."
+      "limitations": "Maksimal 2x revisi visual per scene untuk menjaga efisiensi proses rendering."
     },
     {
       "id": "custom-style",

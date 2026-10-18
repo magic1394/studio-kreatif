@@ -37,14 +37,14 @@
     },
     {
       "id": "port-ai-1",
-      "title": "Dunia Imajinasi & Cerita Visual — 3D AI Animation",
+      "title": "3D Arsitektur Sinematik — Visualisasi Ruang & Bangunan",
       "category": "ai-motion",
-      "categoryLabel": "3D AI Visual",
+      "categoryLabel": "3D Arsitektur Sinematik",
       "duration": "01:30",
       "aspectRatio": "16:9",
       "youtubeId": "dQw4w9WgXcQ",
-      "stats": "Consistent AI Character + Dynamic Camera + Vivid Color",
-      "description": "Rangkaian adegan 3D AI penuh warna dan ekspresif dengan karakter konsisten, dipadukan narasi VO dan musik yang menggugah."
+      "stats": "Photorealistic Render + Cinematic Camera + Lighting Detail",
+      "description": "Visualisasi ruang, bangunan, dan interior fotorealistik dengan pergerakan kamera sinematik, pencahayaan dramatis, serta detail arsitektur berkelas."
     },
     {
       "id": "port-motion-1",
@@ -70,14 +70,14 @@
     },
     {
       "id": "port-creator-1",
-      "title": "Edukasi & Storytelling Kreatif — Content Creator",
+      "title": "Edukasi & Storytelling Kreatif dengan Full Animasi 2D",
       "category": "editing",
-      "categoryLabel": "Content Creator",
+      "categoryLabel": "Full Animasi 2D",
       "duration": "02:10",
       "aspectRatio": "16:9",
       "youtubeId": "dQw4w9WgXcQ",
-      "stats": "Premium AI VO + B-Roll Rapat + Dynamic Subtitle",
-      "description": "Gaya editing dinamis dengan pemilihan stock footage yang pas, narasi suara jernih, dan teks interaktif."
+      "stats": "Full 2D Animation + Premium AI VO + Dynamic Storytelling",
+      "description": "Penyajian konten edukasi dan cerita kreatif yang hidup menggunakan full animasi 2D ekspresif, narasi suara jernih, dan ilustrasi memikat."
     },
     {
       "id": "port-custom-2",
