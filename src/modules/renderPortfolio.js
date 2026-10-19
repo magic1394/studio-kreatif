@@ -29,7 +29,7 @@ export function renderPortfolio(portfolioData) {
               <span class="tag-pill">${item.categoryLabel}</span>
               <span class="tag-pill">${item.aspectRatio} • ${item.duration}</span>
             </div>
-            ${item.youtubeId ? `<img src="https://img.youtube.com/vi/${item.youtubeId}/hqdefault.jpg" alt="${item.title}" class="portfolio-img" loading="lazy" />` : ''}
+            ${item.customUrl ? `<iframe src="${item.customUrl}" tabindex="-1" style="position:absolute; inset:0; width:100%; height:100%; border:none; pointer-events:none; z-index:1;"></iframe>` : (item.youtubeId ? `<img src="https://img.youtube.com/vi/${item.youtubeId}/hqdefault.jpg" alt="${item.title}" class="portfolio-img" loading="lazy" />` : '')}
             <div class="play-trigger" title="Putar Preview Video">▶</div>
           </div>
           <div class="portfolio-body">
