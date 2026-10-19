@@ -92,7 +92,7 @@ function openVideoModal(youtubeId, title, customUrl) {
         src="${customUrl}"
         title="${title}"
         frameborder="0"
-        style="width:100%; height:100%; border:none;"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
         allowfullscreen
       ></iframe>
     `;
@@ -102,7 +102,6 @@ function openVideoModal(youtubeId, title, customUrl) {
         src="https://www.youtube.com/embed/${youtubeId}?autoplay=1&rel=0"
         title="${title}"
         frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       ></iframe>
     `;
