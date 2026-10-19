@@ -24,7 +24,7 @@ export function renderPortfolio(portfolioData) {
       .map(
         (item) => `
         <article class="portfolio-card">
-          <div class="portfolio-thumb" data-yt="${item.youtubeId}" data-title="${item.title}">
+          <div class="portfolio-thumb" data-yt="${item.youtubeId}" data-title="${item.title}" data-url="${item.customUrl || ''}">
             <div class="portfolio-meta-top">
               <span class="tag-pill">${item.categoryLabel}</span>
               <span class="tag-pill">${item.aspectRatio} • ${item.duration}</span>
@@ -68,8 +68,9 @@ export function renderPortfolio(portfolioData) {
       thumb.addEventListener('click', () => {
         const ytId = thumb.getAttribute('data-yt');
         const title = thumb.getAttribute('data-title');
-        if (ytId && ytId.trim() !== '') {
-          openVideoModal(ytId, title);
+        const customUrl = thumb.getAttribute('data-url');
+        if ((ytId && ytId.trim() !== '') || (customUrl && customUrl.trim() !== '')) {
+          openVideoModal(ytId, title, customUrl);
         }
       });
     });
@@ -78,21 +79,33 @@ export function renderPortfolio(portfolioData) {
   render();
 }
 
-function openVideoModal(youtubeId, title) {
+function openVideoModal(youtubeId, title, customUrl) {
   const modal = document.getElementById('video-modal');
   const titleEl = document.getElementById('modal-video-title');
   const frameWrap = document.getElementById('modal-video-frame');
   if (!modal || !frameWrap) return;
 
   titleEl.textContent = title;
-  frameWrap.innerHTML = `
-    <iframe
-      src="https://www.youtube.com/embed/${youtubeId}?autoplay=1&rel=0"
-      title="${title}"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>
-  `;
+  if (customUrl && customUrl.trim() !== '') {
+    frameWrap.innerHTML = `
+      <iframe
+        src="${customUrl}"
+        title="${title}"
+        frameborder="0"
+        style="width:100%; height:100%; border:none;"
+        allowfullscreen
+      ></iframe>
+    `;
+  } else if (youtubeId && youtubeId.trim() !== '') {
+    frameWrap.innerHTML = `
+      <iframe
+        src="https://www.youtube.com/embed/${youtubeId}?autoplay=1&rel=0"
+        title="${title}"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    `;
+  }
   modal.classList.add('open');
 }

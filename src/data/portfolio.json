@@ -48,14 +48,15 @@
     },
     {
       "id": "port-motion-1",
-      "title": "2D Motion Graphic — Presentasi Produk & Edukasi Brand",
+      "title": "2D Motion Graphic — Studio Kreatif Explainer (GSAP Engine)",
       "category": "ai-motion",
       "categoryLabel": "Motion Graphic",
-      "duration": "01:15",
+      "duration": "00:28",
       "aspectRatio": "16:9",
       "youtubeId": "",
-      "stats": "Smooth Keyframe + Custom Illustration + Kinetic Text",
-      "description": "Animasi 2D yang segar, bersih, dan penuh energi positif untuk menjelaskan layanan atau mengedukasi audiens."
+      "customUrl": "/motion/studiokreatif.html",
+      "stats": "Vector SVG + GSAP Timeline + Pure Code",
+      "description": "Motion graphic interaktif berbasis kode murni tanpa video MP4, dirender langsung oleh browser menggunakan GSAP."
     },
     {
       "id": "port-clipper-1",
