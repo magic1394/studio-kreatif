@@ -82,9 +82,18 @@ export function renderPortfolio(portfolioData) {
 
 function openVideoModal(youtubeId, title, customUrl, imgUrl) {
   const modal = document.getElementById('video-modal');
+  const modalContent = modal ? modal.querySelector('.video-modal-content') : null;
   const titleEl = document.getElementById('modal-video-title');
   const frameWrap = document.getElementById('modal-video-frame');
   if (!modal || !frameWrap) return;
+
+  if (modalContent) {
+    if (customUrl && customUrl.toLowerCase().includes('rumah.html')) {
+      modalContent.classList.add('modal-interactive');
+    } else {
+      modalContent.classList.remove('modal-interactive');
+    }
+  }
 
   titleEl.textContent = title;
   if (customUrl && customUrl.trim() !== '') {

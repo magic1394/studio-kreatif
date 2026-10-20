@@ -59,15 +59,16 @@
       "description": "Motion graphic interaktif berbasis kode murni tanpa video MP4, dirender langsung oleh browser menggunakan GSAP."
     },
     {
-      "id": "port-clipper-1",
-      "title": "Klip Podcast Inspiratif — Hook Kuat & Dynamic Subtitle",
-      "category": "clipper",
-      "categoryLabel": "Clipper 9:16",
-      "duration": "00:52",
-      "aspectRatio": "9:16",
+      "id": "port-rumah-3d",
+      "title": "Rumah Minimalis Modern — Gambar Kerja & Konfigurator 3D Interaktif",
+      "category": "ai-motion",
+      "categoryLabel": "3D Interaktif",
+      "duration": "Interactive 3D",
+      "aspectRatio": "16:9",
       "youtubeId": "",
-      "stats": "6 Klip Vertikal + Auto-Caption + Headline Menarik",
-      "description": "Mengubah obrolan panjang menjadi klip vertikal 9:16 yang padat, seru, dan nyaman ditonton di layar HP."
+      "customUrl": "/motion/Rumah.html",
+      "stats": "Three.js 3D • Exploded View • Kustomisasi Material & Atap",
+      "description": "Eksplorasi rumah minimalis modern secara interaktif 360°: putar kamera, bongkar struktur per lantai (exploded view), ganti tipe atap, tekstur material, hingga mode siang/senja."
     },
     {
       "id": "port-creator-1",
