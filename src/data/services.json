@@ -63,23 +63,23 @@
       "limitations": "Dari 1 sumber video panjang durasi maksimal 60 menit."
     },
     {
-      "id": "basic-edit",
-      "category": "editing",
-      "categoryLabel": "Basic Video Editing",
-      "name": "Paket Basic Cut",
-      "badge": null,
-      "price": 35000,
-      "unit": "Menit",
+      "id": "interactive-3d-web",
+      "category": "ai-motion",
+      "categoryLabel": "3D Web Configurator",
+      "name": "Paket 3D Interaktif & Konfigurator Arsitektur (Web 360°)",
+      "badge": "Interaktif 360°",
+      "price": 250000,
+      "unit": "Proyek",
       "minOrder": 1,
-      "shortDesc": "Editing bersih, cerah, dan rapi untuk vlog, talking head, podcast, atau dokumentasi.",
+      "shortDesc": "Presentasi arsitektur & bangunan 3D interaktif berbasis web (Three.js) yang bisa diputar, dibongkar per lantai, dan dikustomisasi langsung oleh klien di browser.",
       "features": [
-        "Cut-to-cut rapi (buang jeda/bagian salah bicara)",
-        "Color correction cerah & pencahayaan seimbang",
-        "Audio syncing & pembersihan noise dasar",
-        "Penambahan Background Music (BGM) bebas copyright",
-        "Transisi bersih & lower-third nama pembicara"
+        "Navigasi kamera 360° interaktif (putar, geser, zoom) langsung di browser HP/PC",
+        "Fitur Exploded View (bongkar-pasang struktur per lantai & layer bangunan)",
+        "Kustomisasi real-time: simulasi ganti tipe atap, tekstur dinding, & material kayu",
+        "Mode Blueprint (Gambar Kerja), simulasi pencahayaan Siang/Senja & lampu",
+        "File HTML mandiri siap dipasang di website portofolio atau dikirim ke klien"
       ],
-      "limitations": "Tanpa subtitle penuh dan tanpa Voice Over. Bahan mentah maks. 15 menit untuk 1 menit hasil."
+      "limitations": "Klien menyediakan denah/sketsa ukuran atau foto referensi bangunan. Maks. 2x revisi struktur/material."
     },
     {
       "id": "content-creator",
