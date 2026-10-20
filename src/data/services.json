@@ -63,25 +63,6 @@
       "limitations": "Dari 1 sumber video panjang durasi maksimal 60 menit."
     },
     {
-      "id": "interactive-3d-web",
-      "category": "ai-motion",
-      "categoryLabel": "3D Web Configurator",
-      "name": "Paket 3D Interaktif & Konfigurator Arsitektur (Web 360°)",
-      "badge": "Interaktif 360°",
-      "price": 250000,
-      "unit": "Proyek",
-      "minOrder": 1,
-      "shortDesc": "Presentasi arsitektur & bangunan 3D interaktif berbasis web (Three.js) yang bisa diputar, dibongkar per lantai, dan dikustomisasi langsung oleh klien di browser.",
-      "features": [
-        "Navigasi kamera 360° interaktif (putar, geser, zoom) langsung di browser HP/PC",
-        "Fitur Exploded View (bongkar-pasang struktur per lantai & layer bangunan)",
-        "Kustomisasi real-time: simulasi ganti tipe atap, tekstur dinding, & material kayu",
-        "Mode Blueprint (Gambar Kerja), simulasi pencahayaan Siang/Senja & lampu",
-        "File HTML mandiri siap dipasang di website portofolio atau dikirim ke klien"
-      ],
-      "limitations": "Klien menyediakan denah/sketsa ukuran atau foto referensi bangunan. Maks. 2x revisi struktur/material."
-    },
-    {
       "id": "content-creator",
       "category": "editing",
       "categoryLabel": "2D Animation & Creator",
@@ -137,6 +118,25 @@
         "Output gambar/visual render resolusi tinggi siap presentasi"
       ],
       "limitations": "Klien menyediakan foto acuan visual atau sketsa denah/tampak bangunan."
+    },
+    {
+      "id": "interactive-3d-web",
+      "category": "ai-motion",
+      "categoryLabel": "3D Web Configurator",
+      "name": "Paket 3D Interaktif & Konfigurator Arsitektur (Web 360°)",
+      "badge": "Interaktif 360°",
+      "price": 250000,
+      "unit": "Proyek",
+      "minOrder": 1,
+      "shortDesc": "Presentasi arsitektur & bangunan 3D interaktif berbasis web (Three.js) yang bisa diputar, dibongkar per lantai, dan dikustomisasi langsung oleh klien di browser.",
+      "features": [
+        "Navigasi kamera 360° interaktif (putar, geser, zoom) langsung di browser HP/PC",
+        "Fitur Exploded View (bongkar-pasang struktur per lantai & layer bangunan)",
+        "Kustomisasi real-time: simulasi ganti tipe atap, tekstur dinding, & material kayu",
+        "Mode Blueprint (Gambar Kerja), simulasi pencahayaan Siang/Senja & lampu",
+        "File HTML mandiri siap dipasang di website portofolio atau dikirim ke klien"
+      ],
+      "limitations": "Klien menyediakan denah/sketsa ukuran atau foto referensi bangunan. Maks. 2x revisi struktur/material."
     }
   ],
   "addons": [
