@@ -84,21 +84,21 @@
     {
       "id": "content-creator",
       "category": "editing",
-      "categoryLabel": "Full Content Creation",
-      "name": "Paket Content Creator",
+      "categoryLabel": "2D Animation & Creator",
+      "name": "Paket Content Creator (Full 2D Animation & Storytelling)",
       "badge": "Best Value",
-      "price": 75000,
+      "price": 100000,
       "unit": "Menit",
       "minOrder": 1,
-      "shortDesc": "Solusi terima beres lengkap dengan Voice Over, subtitle dinamis, dan stock footage.",
+      "shortDesc": "Video edukasi, sejarah, dan storytelling memikat dengan Full 2D Character Animation seperti referensi channel populer.",
       "features": [
+        "Full 2D Character Animation & ilustrasi visual bercerita",
         "Termasuk Voice Over (Premium AI Natural Voice)",
-        "Dynamic Subtitle penuh sepanjang video",
-        "Kurasi Stock Footage / B-Roll berkualitas tinggi",
-        "Sound Effect (SFX) & Background Music yang hidup",
-        "Cocok untuk konten edukasi, storytelling, & faceless channel"
+        "Dynamic Subtitle & tipografi penjelas sepanjang video",
+        "Pacing dinamis, Sound Effect (SFX) & Scoring Music yang hidup",
+        "Sangat cocok untuk channel edukasi, sejarah, bisnis & storytelling"
       ],
-      "limitations": "Naskah/script disediakan klien (atau tambah opsi penulisan naskah di kalkulator)."
+      "limitations": "Naskah/script disediakan klien (atau tambah opsi penulisan naskah di kalkulator). Maks. 2x revisi minor."
     },
     {
       "id": "visual-pro-ai-motion",
