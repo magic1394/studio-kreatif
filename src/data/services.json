@@ -120,23 +120,23 @@
       "limitations": "Maksimal 2x revisi visual per scene untuk menjaga efisiensi proses rendering."
     },
     {
-      "id": "custom-style",
-      "category": "custom",
-      "categoryLabel": "Full Animasi 2D",
-      "name": "Paket Edukasi & Storytelling Full Animasi 2D",
-      "badge": "Fleksibel & Eksklusif",
+      "id": "arch-viz-3d",
+      "category": "ai-motion",
+      "categoryLabel": "Visualisasi Arsitektur",
+      "name": "Paket Visualisasi 3D Arsitektur (Blender & Render)",
+      "badge": "3D Modeling & Render",
       "price": 175000,
-      "unit": "Menit",
+      "unit": " Proyek / View",
       "minOrder": 1,
-      "shortDesc": "Konten edukasi dan storytelling kreatif yang hidup menggunakan full animasi 2D, atau adaptasi gaya referensi channel impian Anda.",
+      "shortDesc": "Transformasi dari foto/sketsa referensi menjadi visual 3D fasad bangunan & arsitektur modern menggunakan Blender.",
       "features": [
-        "Visualisasi Full Animasi 2D ekspresif & adaptasi gaya referensi",
-        "Kombinasi bebas: Karakter 2D, Motion Graphic, Peta/Data, atau Parallax",
-        "Termasuk Voice Over Natural & tipografi mengikuti konsep cerita",
-        "Pacing, transisi, & color grading disesuaikan dengan karakter brand",
-        "Sound design berlapis (SFX, ambience, & scoring)"
+        "01 / Acuan Visual: Membaca bentuk, siluet, & karakter fasad dari referensi",
+        "02 / Proses 3D: Menyusun massa, volume bangunan, & elemen fasad di Blender",
+        "03 / Hasil Visual: Material tekstur, pencahayaan (lighting), lanskap, & render",
+        "Cocok untuk studi fasad rumah modern, interior, & presentasi proyek",
+        "Output gambar/visual render resolusi tinggi siap presentasi"
       ],
-      "limitations": "Wajib menyertakan konsep cerita atau minimal 1 link video referensi gaya saat memesan."
+      "limitations": "Klien menyediakan foto acuan visual atau sketsa denah/tampak bangunan."
     }
   ],
   "addons": [

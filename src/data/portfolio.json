@@ -81,15 +81,16 @@
       "description": "Video edukasi dan penceritaan sejarah yang dikemas hidup dengan teknik visual dan narasi mendalam."
     },
     {
-      "id": "port-custom-2",
-      "title": "Adaptasi Gaya Channel Favorit Anda — Full Custom",
-      "category": "custom",
-      "categoryLabel": "Custom Style",
-      "duration": "04:20",
+      "id": "port-arch-blender",
+      "title": "Dari Referensi ke Visual 3D — Studi Fasad Rumah Modern",
+      "category": "ai-motion",
+      "categoryLabel": "Visualisasi Arsitektur",
+      "duration": "3 Tahap",
       "aspectRatio": "16:9",
       "youtubeId": "",
-      "stats": "Sesuai Link Referensi + Custom Pacing + Sound Design",
-      "description": "Punya referensi gaya editing dari kreator luar atau dalam negeri? Kirimkan link-nya, kami sesuaikan untuk identitas konten Anda."
+      "thumbnailUrl": "/images/sunconcept_process_board.jpg",
+      "stats": "Blender • 3D Modeling • Lighting • Rendering",
+      "description": "Alur proyek konseptual: membaca bentuk & karakter acuan visual (01), menyusun massa di Blender (02), hingga penyatuan material, cahaya, & render akhir (03)."
     }
   ]
 }

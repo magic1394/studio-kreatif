@@ -24,12 +24,12 @@ export function renderPortfolio(portfolioData) {
       .map(
         (item) => `
         <article class="portfolio-card">
-          <div class="portfolio-thumb" data-yt="${item.youtubeId}" data-title="${item.title}" data-url="${item.customUrl || ''}">
+          <div class="portfolio-thumb" data-yt="${item.youtubeId}" data-title="${item.title}" data-url="${item.customUrl || ''}" data-img="${item.thumbnailUrl || ''}">
             <div class="portfolio-meta-top">
               <span class="tag-pill">${item.categoryLabel}</span>
               <span class="tag-pill">${item.aspectRatio} • ${item.duration}</span>
             </div>
-            ${item.customUrl ? `<iframe src="${item.customUrl}" tabindex="-1" style="position:absolute; inset:0; width:100%; height:100%; border:none; pointer-events:none; z-index:1;"></iframe>` : (item.youtubeId ? `<img src="https://img.youtube.com/vi/${item.youtubeId}/hqdefault.jpg" alt="${item.title}" class="portfolio-img" loading="lazy" />` : '')}
+            ${item.customUrl ? `<iframe src="${item.customUrl}" tabindex="-1" style="position:absolute; inset:0; width:100%; height:100%; border:none; pointer-events:none; z-index:1;"></iframe>` : item.thumbnailUrl ? `<img src="${item.thumbnailUrl}" alt="${item.title}" class="portfolio-img" loading="lazy" />` : item.youtubeId ? `<img src="https://img.youtube.com/vi/${item.youtubeId}/hqdefault.jpg" alt="${item.title}" class="portfolio-img" loading="lazy" />` : ''}
             <div class="play-trigger" title="Putar Preview Video">▶</div>
           </div>
           <div class="portfolio-body">
@@ -69,8 +69,9 @@ export function renderPortfolio(portfolioData) {
         const ytId = thumb.getAttribute('data-yt');
         const title = thumb.getAttribute('data-title');
         const customUrl = thumb.getAttribute('data-url');
-        if ((ytId && ytId.trim() !== '') || (customUrl && customUrl.trim() !== '')) {
-          openVideoModal(ytId, title, customUrl);
+        const imgUrl = thumb.getAttribute('data-img');
+        if ((ytId && ytId.trim() !== '') || (customUrl && customUrl.trim() !== '') || (imgUrl && imgUrl.trim() !== '')) {
+          openVideoModal(ytId, title, customUrl, imgUrl);
         }
       });
     });
@@ -79,7 +80,7 @@ export function renderPortfolio(portfolioData) {
   render();
 }
 
-function openVideoModal(youtubeId, title, customUrl) {
+function openVideoModal(youtubeId, title, customUrl, imgUrl) {
   const modal = document.getElementById('video-modal');
   const titleEl = document.getElementById('modal-video-title');
   const frameWrap = document.getElementById('modal-video-frame');
@@ -106,6 +107,8 @@ function openVideoModal(youtubeId, title, customUrl) {
         allowfullscreen
       ></iframe>
     `;
+  } else if (imgUrl && imgUrl.trim() !== '') {
+    frameWrap.innerHTML = `<img src="${imgUrl}" alt="${title}" style="width:100%; height:auto; display:block;" />`;
   }
   modal.classList.add('open');
 }
