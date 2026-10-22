@@ -1,47 +1,40 @@
 :root {
-  /* Palet Warna Editorial Minimalist — Warm Paper & Ink Black (Mudah diedit oleh Hermes Agent) */
-  --bg-primary: #F6F4EE;           /* Warm Editorial Paper */
-  --bg-secondary: #EFECE4;         /* Soft Warm Stone */
-  --bg-card: #FBF9F5;              /* Kartu off-white hangat */
+  --bg-primary: #F5F2EB;           /* Warm Cream Paper khas Jack & Jill */
+  --bg-secondary: #EBE7DE;         /* Soft Warm Stone */
+  --bg-card: #FAF8F3;              /* Editorial Off-White Card */
   --bg-card-hover: #FFFFFF;
-  --bg-glass: rgba(246, 244, 238, 0.88);
+  --bg-glass: rgba(245, 242, 235, 0.9);
 
-  /* Warna Aksen Editorial */
-  --accent-primary: #141413;       /* Charcoal Ink Black — tombol & aksen utama */
-  --accent-sky: #4A4843;
-  --accent-amber: #D94E34;         /* Warm Terracotta / Burnt Orange — highlight & badge */
-  --accent-coral: #D94E34;
-  --accent-emerald: #1E5631;       /* Deep Forest Green — tombol WA */
-  --accent-teal: #7A756C;          /* Warm Muted Taupe — kategori kecil */
+  --accent-primary: #141413;       /* Charcoal Ink Black */
+  --accent-sky: #141413;
+  --accent-amber: #D95338;         /* Editorial Burnt Orange */
+  --accent-coral: #D95338;
+  --accent-emerald: #141413;       /* Seragamkan aksen ke Ink Black */
+  --accent-teal: #6E6A63;          /* Muted Warm Grey */
 
-  /* Warna solid (tanpa gradien neon) */
   --gradient-brand: #141413;
-  --gradient-warm: #D94E34;
-  --gradient-wa: #15803D;
+  --gradient-warm: #141413;
+  --gradient-wa: #141413;          /* Semua tombol WA diseragamkan menjadi Ink Black elegan */
   --gradient-featured: #FFFFFF;
 
-  /* Tipografi & Warna Teks */
   --text-primary: #141413;
-  --text-secondary: #4A4843;
-  --text-muted: #78756E;
+  --text-secondary: #524F49;
+  --text-muted: #7D7970;
 
-  /* Border & Shadow */
-  --border-subtle: #DCD8CE;
+  --border-subtle: #D8D3C8;        /* Garis kartu tipis & tegas */
   --border-highlight: #141413;
-  --shadow-card: 0 2px 10px rgba(20, 20, 19, 0.03);
-  --shadow-card-hover: 4px 4px 0px #141413;   /* Tactile editorial shadow */
-  --shadow-glow: 0 4px 14px rgba(20, 20, 19, 0.12);
+  --shadow-card: none;             /* Flat editorial look */
+  --shadow-card-hover: 0 12px 24px -10px rgba(20, 20, 19, 0.08);
+  --shadow-glow: none;
 
-  /* Font Family */
-  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-serif: 'Instrument Serif', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 
-  /* Spacing & Radius */
   --container-max: 1200px;
-  --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 14px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
   --radius-full: 9999px;
   --transition-fast: 0.22s cubic-bezier(0.4, 0, 0.2, 1);
 }

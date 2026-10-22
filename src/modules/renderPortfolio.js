@@ -1,3 +1,5 @@
+import { initCarousel } from './utils.js';
+
 export function renderPortfolio(portfolioData) {
   const root = document.getElementById('portfolio-root');
   if (!root) return;
@@ -51,8 +53,23 @@ export function renderPortfolio(portfolioData) {
         <div class="filter-tabs" id="portfolio-tabs">
           ${tabsHtml}
         </div>
-        <div class="grid-3">
-          ${itemsHtml}
+        <div class="carousel-container">
+          <div class="carousel-nav-row">
+            <div class="carousel-hint">
+              <span class="carousel-hint-icon">‹ ›</span> Geser horizontal atau sentuh panah untuk karya lainnya
+            </div>
+            <div class="carousel-nav-arrows">
+              <button class="carousel-arrow-btn portfolio-prev" aria-label="Sebelumnya">‹</button>
+              <button class="carousel-arrow-btn portfolio-next" aria-label="Berikutnya">›</button>
+            </div>
+          </div>
+          <div class="carousel-wrapper">
+            <button class="carousel-side-arrow prev portfolio-prev" aria-label="Sebelumnya">‹</button>
+            <div class="carousel-track" id="portfolio-track">
+              ${itemsHtml}
+            </div>
+            <button class="carousel-side-arrow next portfolio-next" aria-label="Berikutnya">›</button>
+          </div>
         </div>
       </div>
     `;
@@ -64,8 +81,11 @@ export function renderPortfolio(portfolioData) {
       });
     });
 
+    const carousel = initCarousel(root, 'portfolio-track', 'portfolio-prev', 'portfolio-next');
+
     root.querySelectorAll('.portfolio-thumb').forEach((thumb) => {
       thumb.addEventListener('click', () => {
+        if (carousel && carousel.hasDragged()) return;
         const ytId = thumb.getAttribute('data-yt');
         const title = thumb.getAttribute('data-title');
         const customUrl = thumb.getAttribute('data-url');
