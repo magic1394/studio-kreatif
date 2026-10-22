@@ -68,6 +68,16 @@ section#workflow {
   color: var(--accent-primary);
 }
 
+.nav-links a.btn-wa {
+  color: #FFFFFF !important;
+  background-color: var(--accent-primary) !important;
+}
+
+.nav-links a.btn-wa:hover {
+  color: #FFFFFF !important;
+  background-color: #2D2A26 !important;
+}
+
 .mobile-menu-btn {
   display: none;
   padding: 0.5rem 0.85rem;

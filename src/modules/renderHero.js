@@ -32,7 +32,6 @@ export function renderHero(siteConfig) {
 
   heroContainer.innerHTML = `
     <div class="container">
-      <span class="hero-badge">${siteConfig.hero.badge}</span>
       <h1 class="hero-title">
         ${siteConfig.hero.title} <br/>
         <span class="text-gradient">${siteConfig.hero.titleHighlight}</span>
