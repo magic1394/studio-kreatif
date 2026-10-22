@@ -11,6 +11,7 @@ import workflowData from './data/workflow.json';
 import { renderHero } from './modules/renderHero.js';
 import { renderPortfolio } from './modules/renderPortfolio.js';
 import { renderPricing } from './modules/renderPricing.js';
+import { renderTransparency } from './modules/renderTransparency.js';
 import { initWaCalculator } from './modules/waCalculator.js';
 import { renderWorkflow } from './modules/renderWorkflow.js';
 
@@ -18,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderHero(siteConfig);
   const selectPackageInCalculator = initWaCalculator(servicesData, siteConfig);
   renderPricing(servicesData, siteConfig, selectPackageInCalculator);
+  renderTransparency();
   renderPortfolio(portfolioData);
   renderWorkflow(workflowData, siteConfig);
 

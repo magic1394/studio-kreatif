@@ -24,23 +24,48 @@ export function renderPricing(servicesData, siteConfig, onSelectPackageForCalcul
 
     const cardsHtml = filteredPackages
       .map((pkg) => {
-        const directWaText = `Halo ${siteConfig.brandName}, saya tertarik memesan *${pkg.name}* (${formatRupiah(pkg.price)} / ${pkg.unit}). Berikut detail singkat proyek saya:`;
+        const isCustom = pkg.isCustom || pkg.price === null;
+        const directWaText = isCustom
+          ? `Halo ${siteConfig.brandName}, saya tertarik berkonsultasi mengenai paket *${pkg.name}*. Saya punya referensi gaya video untuk diadaptasi. Berikut gambaran kebutuhan saya:`
+          : `Halo ${siteConfig.brandName}, saya tertarik memesan *${pkg.name}* (${formatRupiah(pkg.price)} / ${pkg.unit}). Berikut detail singkat proyek saya:`;
         const directWaLink = buildWhatsAppUrl(siteConfig.whatsappNumber, directWaText);
 
         const featuresHtml = pkg.features
           .map((f) => `<li><span class="check">✓</span> <span>${f}</span></li>`)
           .join('');
 
+        const priceDisplay = isCustom
+          ? `<span class="price-amount" style="font-size:1.45rem;">Sesuai konsultasi</span>`
+          : `<span class="price-amount">${formatRupiah(pkg.price)}</span> <span class="price-unit">/ ${pkg.unit}</span>`;
+
+        const actionsHtml = isCustom
+          ? `
+            <div class="card-actions">
+              <a href="${directWaLink}" target="_blank" rel="noopener" class="btn btn-wa" style="width:100%;">
+                Konsultasi via WA
+              </a>
+            </div>
+          `
+          : `
+            <div class="card-actions">
+              <button class="btn btn-outline select-calc-btn" data-pkg-id="${pkg.id}">
+                Hitung Biaya
+              </button>
+              <a href="${directWaLink}" target="_blank" rel="noopener" class="btn btn-wa">
+                Order via WA
+              </a>
+            </div>
+          `;
+
         return `
-          <article class="pricing-card ${pkg.badge ? 'featured' : ''}">
+          <article class="pricing-card ${pkg.badge ? 'featured' : ''}" data-pkg-id="${pkg.id}">
             ${pkg.badge ? `<span class="card-badge">${pkg.badge}</span>` : ''}
             <div>
               <div class="card-cat">${pkg.categoryLabel}</div>
               <h3 class="card-title">${pkg.name}</h3>
               <p class="card-desc">${pkg.shortDesc}</p>
               <div class="card-price-box">
-                <span class="price-amount">${formatRupiah(pkg.price)}</span>
-                <span class="price-unit">/ ${pkg.unit}</span>
+                ${priceDisplay}
               </div>
               <ul class="feature-list">
                 ${featuresHtml}
@@ -48,14 +73,7 @@ export function renderPricing(servicesData, siteConfig, onSelectPackageForCalcul
             </div>
             <div>
               <div class="card-limit">ℹ️ ${pkg.limitations}</div>
-              <div class="card-actions">
-                <button class="btn btn-outline select-calc-btn" data-pkg-id="${pkg.id}">
-                  Hitung Biaya
-                </button>
-                <a href="${directWaLink}" target="_blank" rel="noopener" class="btn btn-wa">
-                  Order via WA
-                </a>
-              </div>
+              ${actionsHtml}
             </div>
           </article>
         `;
@@ -111,6 +129,13 @@ export function renderPricing(servicesData, siteConfig, onSelectPackageForCalcul
       nextBtn.addEventListener('click', () => track.scrollBy({ left: 360, behavior: 'smooth' }));
     }
   }
+
+  window.addEventListener('switch-pricing-tab', (e) => {
+    if (e.detail && e.detail.category) {
+      activeCategory = e.detail.category;
+      render();
+    }
+  });
 
   render();
 }

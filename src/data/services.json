@@ -1,39 +1,35 @@
 {
-  "sectionTitle": "Pilihan Paket Jelas, Transparan & Bersahabat",
-  "sectionSubtitle": "Pilih layanan yang paling pas dengan target konten Anda. Seluruh harga per menit dihitung dari durasi video hasil akhir (output).",
+  "sectionTitle": "Paket & Harga Transparan",
+  "sectionSubtitle": "Tarif per menit dihitung dari durasi video hasil akhir, bukan durasi bahan mentah.",
   "categories": [
     {
       "id": "all",
       "label": "Semua Layanan"
     },
     {
-      "id": "clipper",
-      "label": "Short-Form Clipper"
+      "id": "creator",
+      "label": "Untuk Kreator"
     },
     {
-      "id": "editing",
-      "label": "Video Editing & Creator"
-    },
-    {
-      "id": "ai-motion",
-      "label": "Motion & 3D AI Visual"
+      "id": "arch",
+      "label": "Arsitektur & Properti"
     },
     {
       "id": "custom",
-      "label": "Custom Sesuai Gaya"
+      "label": "Custom Style"
     }
   ],
   "packages": [
     {
       "id": "clipper-basic",
-      "category": "clipper",
+      "category": "creator",
       "categoryLabel": "Short-Form 9:16",
-      "name": "Paket Clipper Basic",
+      "name": "Clipper Basic",
       "badge": "Hemat & Cepat",
       "price": 25000,
       "unit": "6 Klip",
       "minOrder": 1,
-      "shortDesc": "Potong cepat video podcast/stream panjang menjadi 6 klip vertikal siap upload.",
+      "shortDesc": "Anda tentukan menit potongnya, kami edit jadi 6 klip vertikal siap upload.",
       "features": [
         "Output 6 klip vertikal (9:16) @ maks. 60 detik",
         "Klien menyediakan daftar timestamp (menit potong)",
@@ -45,18 +41,18 @@
     },
     {
       "id": "clipper-plus",
-      "category": "clipper",
+      "category": "creator",
       "categoryLabel": "Short-Form 9:16",
-      "name": "Paket Clipper Plus (Hook Finder)",
+      "name": "Clipper Plus (Kami Pilihkan Momennya)",
       "badge": "Populer untuk Podcaster",
       "price": 50000,
       "unit": "6 Klip",
       "minOrder": 1,
-      "shortDesc": "Terima beres! Kami yang menonton dan memilihkan 6 momen paling berpotensi FYP.",
+      "shortDesc": "Kami tonton videonya dan memilih 6 momen yang paling kuat menahan perhatian penonton.",
       "features": [
-        "Tim kami yang mencari 6 momen terbaik (FYP Hook)",
+        "Tim kami yang memilihkan 6 momen paling kuat menahan perhatian",
         "Dynamic Subtitle berwarna + koreksi salah ketik (typo)",
-        "Headline / Judul statis pemancing klik di atas layar",
+        "Headline / Judul statis penjelas konteks di atas layar",
         "Efek zoom in/out halus & sound effect transisi",
         "Format MP4 Full HD 1080p siap TikTok/Reels/Shorts"
       ],
@@ -64,14 +60,14 @@
     },
     {
       "id": "content-creator",
-      "category": "editing",
-      "categoryLabel": "2D Animation & Creator",
-      "name": "Paket Content Creator (Full 2D Animation & Storytelling)",
-      "badge": "Best Value",
+      "category": "creator",
+      "categoryLabel": "2D Animation & Storytelling",
+      "name": "Animasi 2D Storytelling",
+      "badge": "Paling Lengkap",
       "price": 100000,
       "unit": "Menit",
       "minOrder": 1,
-      "shortDesc": "Video edukasi, sejarah, dan storytelling memikat dengan Full 2D Character Animation seperti referensi channel populer.",
+      "shortDesc": "Video edukasi, sejarah, dan bisnis dengan animasi karakter 2D, voice over AI, subtitle, dan musik.",
       "features": [
         "Full 2D Character Animation & ilustrasi visual bercerita",
         "Termasuk Voice Over (Premium AI Natural Voice)",
@@ -83,18 +79,18 @@
     },
     {
       "id": "visual-pro-ai-motion",
-      "category": "ai-motion",
-      "categoryLabel": "3D Arsitektur & Motion",
-      "name": "Paket 3D Arsitektur Sinematik",
+      "category": "arch",
+      "categoryLabel": "3D Arsitektur & AI",
+      "name": "Video Arsitektur Sinematik (3D AI)",
       "badge": "Visual Modern",
       "price": 125000,
       "unit": "Menit",
       "minOrder": 1,
-      "shortDesc": "Fokus visualisasi ruang, bangunan, dan interior fotorealistik dengan pergerakan kamera sinematik yang memukau.",
+      "shortDesc": "Video tur ruang atau bangunan bergaya sinematik, dibuat dari sketsa/gambar acuan Anda dengan bantuan AI. Anda memberi acuan, kami mengarahkan kamera, cahaya, dan suara.",
       "features": [
-        "Visualisasi 3D ruang, eksterior bangunan, & interior fotorealistik",
-        "Pergerakan kamera sinematik & pencahayaan (lighting) dramatis",
-        "Animasi teks, informasi dimensi/fitur ruang, & transisi halus",
+        "Visualisasi 3D ruang, eksterior bangunan, & interior sinematik",
+        "Pergerakan kamera terarah & pencahayaan dramatis",
+        "Animasi teks informasi fitur ruang & transisi halus",
         "Termasuk Voice Over AI Natural & Subtitle",
         "Sound design imersif & elegan yang menyatu dengan suasana ruang"
       ],
@@ -102,14 +98,14 @@
     },
     {
       "id": "arch-viz-3d",
-      "category": "ai-motion",
+      "category": "arch",
       "categoryLabel": "Visualisasi Arsitektur",
-      "name": "Paket Visualisasi 3D Arsitektur (Blender & Render)",
+      "name": "Render 3D Fasad & Interior (Blender)",
       "badge": "3D Modeling & Render",
       "price": 175000,
       "unit": " Proyek / View",
       "minOrder": 1,
-      "shortDesc": "Transformasi dari foto/sketsa referensi menjadi visual 3D fasad bangunan & arsitektur modern menggunakan Blender.",
+      "shortDesc": "Gambar 3D hasil modeling manual di Blender dari foto atau sketsa acuan Anda, untuk studi fasad dan presentasi.",
       "features": [
         "01 / Acuan Visual: Membaca bentuk, siluet, & karakter fasad dari referensi",
         "02 / Proses 3D: Menyusun massa, volume bangunan, & elemen fasad di Blender",
@@ -121,14 +117,14 @@
     },
     {
       "id": "interactive-3d-web",
-      "category": "ai-motion",
+      "category": "arch",
       "categoryLabel": "3D Web Configurator",
-      "name": "Paket 3D Interaktif & Konfigurator Arsitektur (Web 360°)",
+      "name": "Konfigurator 3D Interaktif (Web 360°)",
       "badge": "Interaktif 360°",
       "price": 250000,
       "unit": "Proyek",
       "minOrder": 1,
-      "shortDesc": "Presentasi arsitektur & bangunan 3D interaktif berbasis web (Three.js) yang bisa diputar, dibongkar per lantai, dan dikustomisasi langsung oleh klien di browser.",
+      "shortDesc": "Model rumah 3D yang bisa diputar, dibongkar per lantai, dan diganti material langsung di browser.",
       "features": [
         "Navigasi kamera 360° interaktif (putar, geser, zoom) langsung di browser HP/PC",
         "Fitur Exploded View (bongkar-pasang struktur per lantai & layer bangunan)",
@@ -137,6 +133,26 @@
         "File HTML mandiri siap dipasang di website portofolio atau dikirim ke klien"
       ],
       "limitations": "Klien menyediakan denah/sketsa ukuran atau foto referensi bangunan. Maks. 2x revisi struktur/material."
+    },
+    {
+      "id": "custom-style",
+      "category": "custom",
+      "categoryLabel": "Custom Style",
+      "name": "Custom Style — Sesuai Referensi Anda",
+      "badge": "Sesuai Referensi",
+      "price": null,
+      "unit": "Konsultasi",
+      "minOrder": 1,
+      "isCustom": true,
+      "shortDesc": "Punya channel dengan gaya khusus? Kirim video referensi, kami adaptasi ritme, tipografi, dan transisinya untuk konten Anda. Referensi dipakai sebagai acuan gaya, bukan untuk disalin.",
+      "features": [
+        "Adaptasi ritme, tipografi, dan transisi sesuai video acuan Anda",
+        "Konsultasi mendalam & analisa gaya visual sebelum proses editing",
+        "Referensi dipakai murni sebagai acuan gaya, bukan untuk disalin identik",
+        "Format output disesuaikan dengan platform (16:9 YouTube / 9:16 Shorts)",
+        "Dukungan revisi minor hingga hasil selaras dengan karakter channel Anda"
+      ],
+      "limitations": "Klien mengirimkan link video referensi gaya dan bahan mentah proyek."
     }
   ],
   "addons": [

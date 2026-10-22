@@ -1,3 +1,4 @@
+// TODO-OWNER: Penandaan nama/logo klien pada portofolio belum tersedia. Jangan tampilkan klaim karya klien sebelum diverifikasi oleh pemilik.
 export function renderPortfolio(portfolioData) {
   const root = document.getElementById('portfolio-root');
   if (!root) return;
@@ -29,7 +30,7 @@ export function renderPortfolio(portfolioData) {
               <span class="tag-pill">${item.categoryLabel}</span>
               <span class="tag-pill">${item.aspectRatio} • ${item.duration}</span>
             </div>
-            ${item.customUrl ? `<iframe src="${item.customUrl}" tabindex="-1" style="position:absolute; inset:0; width:100%; height:100%; border:none; pointer-events:none; z-index:1;"></iframe>` : item.thumbnailUrl ? `<img src="${item.thumbnailUrl}" alt="${item.title}" class="portfolio-img" loading="lazy" />` : item.youtubeId ? `<img src="https://img.youtube.com/vi/${item.youtubeId}/hqdefault.jpg" alt="${item.title}" class="portfolio-img" loading="lazy" />` : ''}
+            ${item.customUrl ? `<iframe src="${item.customUrl}" loading="lazy" title="Preview Interaktif ${item.title}" tabindex="-1" style="position:absolute; inset:0; width:100%; height:100%; border:none; pointer-events:none; z-index:1;"></iframe>` : item.thumbnailUrl ? `<img src="${item.thumbnailUrl}" alt="Thumbnail Studi ${item.title}" class="portfolio-img" loading="lazy" />` : item.youtubeId ? `<img src="https://img.youtube.com/vi/${item.youtubeId}/hqdefault.jpg" alt="Preview Video ${item.title}" class="portfolio-img" loading="lazy" />` : ''}
             <div class="play-trigger" title="Putar Preview Video">▶</div>
           </div>
           <div class="portfolio-body">

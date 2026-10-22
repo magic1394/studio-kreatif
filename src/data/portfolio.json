@@ -1,10 +1,10 @@
 {
-  "sectionTitle": "Galeri Referensi & Gaya Visual",
-  "sectionSubtitle": "Klik kategori di bawah untuk melihat berbagai pendekatan visual yang siap kami wujudkan untuk meningkatkan daya tarik konten Anda.",
+  "sectionTitle": "Contoh Karya Studio",
+  "sectionSubtitle": "Tiap contoh menunjukkan gaya dan teknik yang bisa Anda pesan.",
   "categories": [
     {
       "id": "all",
-      "label": "Semua Karya"
+      "label": "Semua"
     },
     {
       "id": "clipper",
@@ -16,7 +16,7 @@
     },
     {
       "id": "ai-motion",
-      "label": "3D AI & Motion"
+      "label": "3D & Motion"
     },
     {
       "id": "custom",

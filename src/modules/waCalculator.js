@@ -4,7 +4,10 @@ export function initWaCalculator(servicesData, siteConfig) {
   const root = document.getElementById('calculator-root');
   if (!root) return null;
 
-  const packages = servicesData.packages;
+  // Filter hanya paket berbayar pasti; paket konsultasi custom tidak masuk dropdown
+  const packages = servicesData.packages.filter(
+    (pkg) => typeof pkg.price === 'number' && pkg.price > 0
+  );
   const addons = servicesData.addons || [];
 
   const optionsHtml = packages
@@ -96,6 +99,9 @@ export function initWaCalculator(servicesData, siteConfig) {
               <span class="label">Estimasi Total Biaya</span>
               <strong id="sum-total-price">Rp 0</strong>
             </div>
+            <p class="calc-estimate-note" style="font-size:0.8rem;color:var(--text-muted);margin:0.5rem 0 1.15rem;line-height:1.45;">
+              ℹ️ Ini estimasi. Angka final dikonfirmasi di WhatsApp setelah bahan Anda kami lihat.
+            </p>
             <a id="calc-wa-submit" href="#" target="_blank" rel="noopener" class="btn btn-wa" style="width:100%;padding:1rem;">
               Kirim Pesanan ke WhatsApp Sekarang
             </a>

@@ -1,11 +1,11 @@
 {
-  "sectionTitle": "Cara Order Mudah & Ketentuan yang Jelas",
+  "sectionTitle": "Cara Order Mudah, Ketentuan & Tanya Jawab",
   "sectionSubtitle": "Kolaborasi yang menyenangkan dimulai dari alur kerja yang sederhana dan transparan.",
   "steps": [
     {
       "stepNumber": "01",
       "title": "Pilih Paket & Hitung Estimasi",
-      "description": "Pilih paket layanan di kalkulator bawah, masukkan durasi atau jumlah klip, dan lihat total biayanya secara langsung."
+      "description": "Pilih paket layanan di kalkulator, masukkan durasi atau jumlah klip, dan dapatkan estimasi biaya secara instan."
     },
     {
       "stepNumber": "02",
@@ -15,18 +15,18 @@
     {
       "stepNumber": "03",
       "title": "Proses Kreatif & Produksi",
-      "description": "Kami mulai mengerjakan pemotongan, Voice Over, 3D AI / Motion Graphic, dan tata suara sesuai karakter konten Anda."
+      "description": "Kami mulai memproses pemotongan, Voice Over, 3D AI / Motion Graphic, dan tata suara sesuai karakter konten Anda."
     },
     {
       "stepNumber": "04",
-      "title": "Preview, Revisi & Siap Upload!",
-      "description": "Kami kirimkan hasil preview. Tersedia garansi hingga 2x revisi minor gratis sebelum file final resolusi penuh Anda unduh."
+      "title": "Preview, Revisi Minor & Siap Upload",
+      "description": "Kami kirimkan hasil preview. Tersedia 2x revisi minor gratis sebelum file final resolusi penuh Anda unduh."
     }
   ],
   "terms": [
     {
       "title": "Hitungan Durasi Output (Hasil Akhir)",
-      "detail": "Seluruh tarif per menit dihitung berdasarkan durasi video hasil akhir (output), bukan durasi bahan mentah. Untuk Paket Basic Cut, batas wajar bahan mentah adalah maksimal 15 menit per 1 menit video hasil."
+      "detail": "Seluruh tarif per menit dihitung berdasarkan durasi video hasil akhir (output), bukan durasi bahan mentah. Untuk Paket Clipper Basic, batas wajar bahan mentah adalah maksimal 15 menit per 1 menit video hasil."
     },
     {
       "title": "Kebijakan Voice Over (VO)",
@@ -34,11 +34,33 @@
     },
     {
       "title": "Batas Revisi & Aset 3D AI",
-      "detail": "Setiap proyek mencakup gratis maksimal 2x revisi minor (koreksi teks, geser timing, ganti musik). Untuk Paket 3D AI Visual, revisi generate ulang prompt dibatasi maks. 2x per scene."
+      "detail": "Setiap proyek mencakup 2x revisi minor gratis (koreksi teks, geser timing, ganti musik). Untuk Paket 3D AI Visual, proses generate ulang prompt dibatasi maksimal 2x per scene."
     },
     {
       "title": "Keamanan File & Privasi",
-      "detail": "Seluruh bahan mentah klien dijamin kerahasiaannya dan disimpan di penyimpanan cloud kerja selama 14 hari setelah proyek selesai sebagai cadangan."
+      "detail": "Seluruh bahan mentah Anda dijaga kerahasiaannya dan disimpan di penyimpanan cloud kerja selama 14 hari setelah proyek selesai sebagai cadangan."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Durasi dihitung dari mana?",
+      "answer": "Tarif per menit dihitung dari durasi video hasil akhir (output), bukan dari total durasi bahan mentah yang Anda kirimkan."
+    },
+    {
+      "question": "Voice over pakai suara siapa?",
+      "answer": "Paket yang menyertakan narasi menggunakan teknologi Premium AI Voice bernada natural dan ramah. Permintaan pengisi suara manusia (human dubber) dikenakan biaya talenta terpisah."
+    },
+    {
+      "question": "Apa saja yang termasuk revisi minor?",
+      "answer": "Koreksi teks/salah ketik, pergeseran timing, dan pergantian musik latar (maksimal 2x revisi minor gratis). Khusus video 3D AI, proses generate ulang prompt visual dibatasi maksimal 2x per scene."
+    },
+    {
+      "question": "Bagaimana dengan bahan mentah saya?",
+      "answer": "Seluruh bahan mentah Anda dijaga kerahasiaannya dan disimpan di penyimpanan cloud kerja selama 14 hari setelah proyek selesai sebagai cadangan arsip."
+    },
+    {
+      "question": "Kenapa paket 3D butuh sketsa/denah dari saya?",
+      "answer": "Karena visual 3D dibuat mengikuti acuan nyata Anda (baik sketsa denah, tampak, atau foto referensi bangunan), bukan karangan kami, sehingga hasil akhir tepat sesuai rancangan proyek Anda."
     }
   ]
 }
