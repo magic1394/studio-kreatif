@@ -97,9 +97,9 @@
 }
 
 .stat-item h3 {
-  font-family: var(--font-serif);
-  font-size: 2.1rem;
-  font-weight: 400;
+  font-family: var(--font-heading);
+  font-size: 1.85rem;
+  font-weight: 800;
   color: var(--text-primary);
 }
 
@@ -382,13 +382,13 @@
 }
 
 .card-title {
-  font-family: var(--font-serif);
-  font-size: 1.6rem;
-  font-weight: 400;
-  letter-spacing: -0.01em;
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
   color: var(--text-primary);
   margin-bottom: 0.5rem;
-  line-height: 1.18;
+  line-height: 1.25;
 }
 
 .card-desc {
@@ -577,13 +577,13 @@
 }
 
 .portfolio-body h3 {
-  font-family: var(--font-serif);
-  font-size: 1.35rem;
-  font-weight: 400;
-  letter-spacing: -0.01em;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
   color: var(--text-primary);
   margin-bottom: 0.4rem;
-  line-height: 1.25;
+  line-height: 1.3;
 }
 
 .portfolio-body p {
