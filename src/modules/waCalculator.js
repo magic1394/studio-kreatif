@@ -99,8 +99,13 @@ export function initWaCalculator(servicesData, siteConfig) {
               <span class="label">Estimasi Total Biaya</span>
               <strong id="sum-total-price">Rp 0</strong>
             </div>
-            <p class="calc-estimate-note" style="font-size:0.8rem;color:var(--text-muted);margin:0.5rem 0 1.15rem;line-height:1.45;">
-              ℹ️ Ini estimasi. Angka final dikonfirmasi di WhatsApp setelah bahan Anda kami lihat.
+            <p class="calc-estimate-note" style="font-size:0.82rem;color:var(--text-secondary);margin:0.5rem 0 1.15rem;line-height:1.45;display:flex;align-items:flex-start;gap:6px;">
+              <svg class="info-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px;">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 16v-4" />
+                <path d="M12 8h.01" />
+              </svg>
+              <span>Ini estimasi. Angka final dikonfirmasi di WhatsApp setelah bahan Anda kami lihat.</span>
             </p>
             <a id="calc-wa-submit" href="#" target="_blank" rel="noopener" class="btn btn-wa" style="width:100%;padding:1rem;">
               Kirim Pesanan ke WhatsApp Sekarang

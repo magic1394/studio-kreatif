@@ -21,6 +21,12 @@ export function renderPortfolio(portfolioData) {
       )
       .join('');
 
+    const playSvg = `
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+        <polygon points="8 5 19 12 8 19 8 5" />
+      </svg>
+    `;
+
     const itemsHtml = filteredItems
       .map(
         (item) => `
@@ -30,13 +36,23 @@ export function renderPortfolio(portfolioData) {
               <span class="tag-pill">${item.categoryLabel}</span>
               <span class="tag-pill">${item.aspectRatio} • ${item.duration}</span>
             </div>
-            ${item.customUrl ? `<iframe src="${item.customUrl}" loading="lazy" title="Preview Interaktif ${item.title}" tabindex="-1" style="position:absolute; inset:0; width:100%; height:100%; border:none; pointer-events:none; z-index:1;"></iframe>` : item.thumbnailUrl ? `<img src="${item.thumbnailUrl}" alt="Thumbnail Studi ${item.title}" class="portfolio-img" loading="lazy" />` : item.youtubeId ? `<img src="https://img.youtube.com/vi/${item.youtubeId}/hqdefault.jpg" alt="Preview Video ${item.title}" class="portfolio-img" loading="lazy" />` : ''}
-            <div class="play-trigger" title="Putar Preview Video">▶</div>
+            ${
+              item.customUrl
+                ? `<iframe src="${item.customUrl}" loading="lazy" title="Preview Interaktif ${item.title}" tabindex="-1" style="position:absolute; inset:0; width:100%; height:100%; border:none; pointer-events:none; z-index:1;"></iframe>`
+                : item.thumbnailUrl
+                ? `<img src="${item.thumbnailUrl}" alt="Thumbnail Studi ${item.title}" class="portfolio-img" loading="lazy" />`
+                : item.youtubeId
+                ? `<img src="https://img.youtube.com/vi/${item.youtubeId}/hqdefault.jpg" alt="Preview Video ${item.title}" class="portfolio-img" loading="lazy" />`
+                : ''
+            }
+            <div class="play-trigger" title="Putar Preview Video">
+              ${playSvg}
+            </div>
           </div>
           <div class="portfolio-body">
             <div class="portfolio-stats">${item.stats}</div>
-            <h3>${item.title}</h3>
-            <p>${item.description}</p>
+            <h3 class="portfolio-title">${item.title}</h3>
+            <p class="portfolio-desc">${item.description}</p>
           </div>
         </article>
       `
@@ -49,13 +65,23 @@ export function renderPortfolio(portfolioData) {
           <h2>${portfolioData.sectionTitle}</h2>
           <p>${portfolioData.sectionSubtitle}</p>
         </div>
-        <div class="filter-tabs" id="portfolio-tabs">
-          ${tabsHtml}
+        <div class="segmented-control-wrap">
+          <div class="filter-tabs segmented-tabs" id="portfolio-tabs">
+            ${tabsHtml}
+          </div>
         </div>
         <div class="carousel-Outer">
           <div class="carousel-controls">
-            <button class="carousel-btn" id="port-prev" aria-label="Geser Kiri">←</button>
-            <button class="carousel-btn" id="port-next" aria-label="Geser Kanan">→</button>
+            <button class="carousel-btn" id="port-prev" aria-label="Geser Kiri">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m15 18-6-6 6-6" />
+              </svg>
+            </button>
+            <button class="carousel-btn" id="port-next" aria-label="Geser Kanan">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </button>
           </div>
           <div class="carousel-track" id="port-track">
             ${itemsHtml}
@@ -85,7 +111,11 @@ export function renderPortfolio(portfolioData) {
         const title = thumb.getAttribute('data-title');
         const customUrl = thumb.getAttribute('data-url');
         const imgUrl = thumb.getAttribute('data-img');
-        if ((ytId && ytId.trim() !== '') || (customUrl && customUrl.trim() !== '') || (imgUrl && imgUrl.trim() !== '')) {
+        if (
+          (ytId && ytId.trim() !== '') ||
+          (customUrl && customUrl.trim() !== '') ||
+          (imgUrl && imgUrl.trim() !== '')
+        ) {
           openVideoModal(ytId, title, customUrl, imgUrl);
         }
       });

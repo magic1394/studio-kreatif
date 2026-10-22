@@ -1,41 +1,71 @@
 :root {
-  --bg-primary: #F5F2EB;           /* Warm Cream Paper khas Jack & Jill */
-  --bg-secondary: #EBE7DE;         /* Soft Warm Stone */
-  --bg-card: #FAF8F3;              /* Editorial Off-White Card */
-  --bg-card-hover: #FFFFFF;
-  --bg-glass: rgba(245, 242, 235, 0.9);
+  /* Surface & Base Palette (Editorial Paper & Charcoal) */
+  --paper: #F9F9F6;
+  --white: #FFFFFF;
+  --charcoal: #100F0F;
+  --clay: #EFEEE9;
+  --stone: #E2E0D9;
 
-  --accent-primary: #141413;       /* Charcoal Ink Black */
-  --accent-sky: #141413;
-  --accent-amber: #D95338;         /* Editorial Burnt Orange */
-  --accent-coral: #D95338;
-  --accent-emerald: #141413;       /* Seragamkan aksen ke Ink Black */
-  --accent-teal: #6E6A63;          /* Muted Warm Grey */
+  /* Aliases for Semantic Mapping */
+  --bg-primary: var(--paper);
+  --bg-secondary: var(--clay);
+  --bg-card: var(--white);
+  --bg-card-hover: var(--white);
+  --bg-glass: rgba(255, 255, 255, 0.92);
 
-  --gradient-brand: #141413;
-  --gradient-warm: #141413;
-  --gradient-wa: #141413;          /* Semua tombol WA diseragamkan menjadi Ink Black elegan */
-  --gradient-featured: #FFFFFF;
+  --accent-primary: var(--charcoal);
+  --border-subtle: var(--stone);
+  --border-card: var(--clay);
+  --border-highlight: var(--charcoal);
 
-  --text-primary: #141413;
-  --text-secondary: #524F49;
-  --text-muted: #7D7970;
+  /* Typography Colors */
+  --text-primary: var(--charcoal);
+  --text-secondary: rgba(16, 15, 15, 0.62);
+  --text-tertiary: rgba(16, 15, 15, 0.40);
+  --text-muted: var(--text-secondary);
 
-  --border-subtle: #D8D3C8;        /* Garis kartu tipis & tegas */
-  --border-highlight: #141413;
-  --shadow-card: none;             /* Flat editorial look */
-  --shadow-card-hover: 0 12px 24px -10px rgba(20, 20, 19, 0.08);
-  --shadow-glow: none;
+  /* Color Splashes */
+  --orange: #FF9463;
+  --yellow: #FFD862;
+  --green: #27D271;
+  --blue: #00CCFA;
+  --purple: #92ADFE;
+  --pink: #FF83E4;
 
-  --font-heading: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-sans: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-serif: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  /* Accent Mappings */
+  --accent-amber: var(--orange);
+  --accent-wa: #075E54;
+  --gradient-brand: var(--charcoal);
+  --gradient-wa: var(--charcoal);
 
-  --container-max: 1200px;
-  --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 16px;
+  /* Radius Tokens */
+  --radius-card: 24px;
+  --radius-container: 32px;
+  --radius-pill: 9999px;
   --radius-full: 9999px;
-  --transition-fast: 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+
+  /* Motion & Easing */
+  --ease: cubic-bezier(0.23, 1, 0.32, 1);
+  --transition-fast: 150ms var(--ease);
+  --transition-hover: 150ms var(--ease);
+  --transition-reveal: 320ms var(--ease);
+
+  /* Typography Families */
+  --font-serif: 'Fraunces', Georgia, serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Fraunces', Georgia, serif;
+  --font-mono: 'Geist Mono', monospace;
+
+  /* Dimensions */
+  --container-max: 1280px;
+  --section-padding: 96px;
+  --section-padding-mobile: 64px;
+
+  /* Subtle Shadows */
+  --shadow-subtle: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-card: none;
+  --shadow-card-hover: 0 12px 32px -8px rgba(16, 15, 15, 0.06);
 }

@@ -4,13 +4,15 @@ export function renderWorkflow(workflowData, siteConfig) {
   const root = document.getElementById('workflow-root');
   if (!root) return;
 
-  const stepsHtml = workflowData.steps
+  const stepsListHtml = workflowData.steps
     .map(
       (s) => `
-      <div class="step-card">
-        <div class="step-num">Langkah ${s.stepNumber}</div>
-        <h3 style="margin-bottom:0.45rem;font-size:1.1rem;color:var(--text-primary);">${s.title}</h3>
-        <p style="font-size:0.9rem;color:var(--text-secondary);">${s.description}</p>
+      <div class="step-editorial-row">
+        <div class="step-mono-num">${s.stepNumber}</div>
+        <div class="step-content">
+          <h3 class="step-title">${s.title}</h3>
+          <p class="step-desc">${s.description}</p>
+        </div>
       </div>
     `
     )
@@ -19,23 +21,29 @@ export function renderWorkflow(workflowData, siteConfig) {
   const termsHtml = workflowData.terms
     .map(
       (t) => `
-      <div class="term-box">
-        <h4 style="margin-bottom:0.35rem;color:var(--text-primary);">${t.title}</h4>
-        <p style="font-size:0.88rem;color:var(--text-secondary);">${t.detail}</p>
+      <div class="term-editorial-item">
+        <h4 class="term-title">${t.title}</h4>
+        <p class="term-detail">${t.detail}</p>
       </div>
     `
     )
     .join('');
 
+  const plusSvg = `
+    <svg class="faq-icon-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+      <path d="M12 5v14M5 12h14" />
+    </svg>
+  `;
+
   const faqsHtml = (workflowData.faqs || [])
     .map(
       (f) => `
-      <details class="faq-item">
-        <summary class="faq-question">
+      <details class="faq-editorial-item">
+        <summary class="faq-editorial-question">
           <span>${f.question}</span>
-          <span class="faq-icon">+</span>
+          <span class="faq-icon-wrap">${plusSvg}</span>
         </summary>
-        <div class="faq-answer">
+        <div class="faq-editorial-answer">
           <p>${f.answer}</p>
         </div>
       </details>
@@ -50,25 +58,27 @@ export function renderWorkflow(workflowData, siteConfig) {
         <p>${workflowData.sectionSubtitle}</p>
       </div>
 
-      <div class="grid-4" style="margin-bottom:3.5rem;">
-        ${stepsHtml}
+      <div class="steps-editorial-wrapper">
+        <div class="steps-editorial-list">
+          ${stepsListHtml}
+        </div>
       </div>
 
-      <div class="terms-wrapper" style="margin-bottom:4rem;">
-        <h3 style="font-size:1.35rem;margin-bottom:1.25rem;color:var(--text-primary);">Ketentuan Kerja & Hak Cipta</h3>
-        <div class="grid-2">
+      <div class="terms-editorial-wrapper">
+        <h3 class="terms-section-title">Ketentuan Kerja & Hak Cipta</h3>
+        <div class="terms-grid">
           ${termsHtml}
         </div>
       </div>
 
       <!-- TODO-OWNER: Estimasi waktu pengerjaan (turnaround time / SLA) dan ketentuan metode pembayaran/DP perlu ditentukan oleh pemilik sebelum ditampilkan di halaman situs. -->
 
-      <div class="faq-section">
+      <div class="faq-editorial-section">
         <div class="faq-header">
           <h3>Pertanyaan yang Sering Diajukan (FAQ)</h3>
           <p>Penjelasan transparan seputar hitungan durasi, suara AI, revisi, dan keamanan bahan Anda.</p>
         </div>
-        <div class="faq-accordion">
+        <div class="faq-editorial-list">
           ${faqsHtml}
         </div>
       </div>
@@ -79,23 +89,43 @@ export function renderWorkflow(workflowData, siteConfig) {
   if (footerRoot) {
     const waLink = buildWhatsAppUrl(siteConfig.whatsappNumber, siteConfig.whatsappGreeting);
     footerRoot.innerHTML = `
-      <div class="container footer-inner">
-        <div class="footer-brand-col">
-          <div class="brand-logo">${siteConfig.brandName}<span class="accent">${siteConfig.brandAccent}</span></div>
-          <p class="footer-tagline">Studio Kreatif — Produksi video & visual 3D untuk kreator dan properti. Remote, seluruh Indonesia.</p>
+      <div class="footer-editorial-wrap">
+        <div class="container">
+          <div class="footer-cta-row">
+            <h2 class="footer-cta-title">Mulai Proyek Anda</h2>
+            <a href="${waLink}" target="_blank" rel="noopener" class="btn btn-pill-charcoal footer-cta-btn">
+              Chat WhatsApp
+            </a>
+          </div>
+
+          <div class="footer-bottom-grid">
+            <div class="footer-brand-side">
+              <div class="brand-logo">Studio Kreatif</div>
+              <p class="footer-tagline">Produksi video & visual 3D untuk kreator dan properti. Remote, seluruh Indonesia.</p>
+            </div>
+            <div class="footer-nav-side">
+              <span class="footer-nav-label">Tautan Cepat</span>
+              <nav class="footer-links-inline">
+                <a href="#pricing">Katalog & Harga</a>
+                <a href="#transparency">Transparansi Produksi</a>
+                <a href="#portfolio">Portofolio</a>
+                <a href="#calculator">Kalkulator Biaya</a>
+                <a href="${waLink}" target="_blank" rel="noopener">WhatsApp (0895-3663-85484)</a>
+              </nav>
+            </div>
+            <div class="footer-copy-side">
+              <p class="footer-copy">© ${new Date().getFullYear()} studiokreatif.biz.id. Seluruh hak cipta dilindungi.</p>
+            </div>
+          </div>
         </div>
-        <div class="footer-links-col">
-          <h4 class="footer-col-title">Tautan Cepat</h4>
-          <nav class="footer-nav">
-            <a href="#pricing">Katalog & Harga</a>
-            <a href="#transparency">Transparansi Produksi</a>
-            <a href="#portfolio">Portofolio</a>
-            <a href="#calculator">Kalkulator Biaya</a>
-            <a href="${waLink}" target="_blank" rel="noopener">WhatsApp (0895-3663-85484)</a>
-          </nav>
-        </div>
-        <div class="footer-copy-col">
-          <p class="footer-copy">© ${new Date().getFullYear()} ${siteConfig.brandName}${siteConfig.brandAccent}. Hak cipta dilindungi.</p>
+
+        <div class="footer-grid-strip paper-grid" aria-hidden="true">
+          <div class="grid-splash" style="left:5%; top:20px; background:var(--orange);"></div>
+          <div class="grid-splash" style="left:20%; top:40px; background:var(--yellow); animation-delay:0.4s;"></div>
+          <div class="grid-splash" style="left:38%; top:20px; background:var(--green); animation-delay:0.8s;"></div>
+          <div class="grid-splash" style="left:55%; top:40px; background:var(--blue); animation-delay:1.2s;"></div>
+          <div class="grid-splash" style="left:72%; top:20px; background:var(--purple); animation-delay:1.6s;"></div>
+          <div class="grid-splash" style="left:89%; top:40px; background:var(--pink); animation-delay:2s;"></div>
         </div>
       </div>
     `;
