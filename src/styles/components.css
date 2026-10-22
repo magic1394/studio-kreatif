@@ -619,3 +619,62 @@
   align-items: center;
   gap: 0.5rem;
 }
+
+
+/* =====================================================================
+   Editorial Minimalist Overrides (gaya jackandjill.ai)
+   ===================================================================== */
+.hero-title {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: clamp(3rem, 6.5vw, 4.8rem);
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+}
+
+.hero-badge {
+  background: #EFECE4;
+  border: 1px solid #D5D0C5;
+  color: #141413;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+.pricing-card,
+.portfolio-card,
+.step-card,
+.calc-wrapper {
+  border: 1px solid #C8C4B8;
+}
+
+.pricing-card:hover,
+.portfolio-card:hover,
+.step-card:hover {
+  border-color: #141413;
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-3px);
+}
+
+.step-card {
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
+}
+
+.pricing-card.featured {
+  border-color: #141413;
+}
+
+.card-title,
+.portfolio-body h3 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: 1.65rem;
+  letter-spacing: -0.01em;
+}
+
+.filter-tab.active {
+  background: #141413;
+  color: #F6F4EE;
+  border-color: #141413;
+  box-shadow: none;
+}
