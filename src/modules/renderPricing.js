@@ -1,4 +1,4 @@
-import { formatRupiah, buildWhatsAppUrl, initCarousel } from './utils.js';
+import { formatRupiah, buildWhatsAppUrl } from './utils.js';
 
 export function renderPricing(servicesData, siteConfig, onSelectPackageForCalculator) {
   const root = document.getElementById('pricing-root');
@@ -71,22 +71,13 @@ export function renderPricing(servicesData, siteConfig, onSelectPackageForCalcul
         <div class="filter-tabs" id="pricing-tabs">
           ${tabsHtml}
         </div>
-        <div class="carousel-container">
-          <div class="carousel-nav-row">
-            <div class="carousel-hint">
-              <span class="carousel-hint-icon">‹ ›</span> Geser horizontal atau sentuh panah untuk pilihan lainnya
-            </div>
-            <div class="carousel-nav-arrows">
-              <button class="carousel-arrow-btn pricing-prev" aria-label="Sebelumnya">‹</button>
-              <button class="carousel-arrow-btn pricing-next" aria-label="Berikutnya">›</button>
-            </div>
+        <div class="carousel-Outer">
+          <div class="carousel-controls">
+            <button class="carousel-btn" id="pricing-prev" aria-label="Geser Kiri">←</button>
+            <button class="carousel-btn" id="pricing-next" aria-label="Geser Kanan">→</button>
           </div>
-          <div class="carousel-wrapper">
-            <button class="carousel-side-arrow prev pricing-prev" aria-label="Sebelumnya">‹</button>
-            <div class="carousel-track" id="pricing-track">
-              ${cardsHtml}
-            </div>
-            <button class="carousel-side-arrow next pricing-next" aria-label="Berikutnya">›</button>
+          <div class="carousel-track" id="pricing-track">
+            ${cardsHtml}
           </div>
         </div>
       </div>
@@ -112,7 +103,13 @@ export function renderPricing(servicesData, siteConfig, onSelectPackageForCalcul
       });
     });
 
-    initCarousel(root, 'pricing-track', 'pricing-prev', 'pricing-next');
+    const track = root.querySelector('#pricing-track');
+    const prevBtn = root.querySelector('#pricing-prev');
+    const nextBtn = root.querySelector('#pricing-next');
+    if (track && prevBtn && nextBtn) {
+      prevBtn.addEventListener('click', () => track.scrollBy({ left: -360, behavior: 'smooth' }));
+      nextBtn.addEventListener('click', () => track.scrollBy({ left: 360, behavior: 'smooth' }));
+    }
   }
 
   render();
